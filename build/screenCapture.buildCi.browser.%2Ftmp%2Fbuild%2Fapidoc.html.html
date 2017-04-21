@@ -1,0 +1,3894 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a>react-overlays (v0.6.12)</a>
+</h1>
+<h4>Utilities for creating robust overlay components</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-overlays">module react-overlays</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Affix">
+            function <span class="apidocSignatureSpan">react-overlays.</span>Affix
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.AutoAffix">
+            function <span class="apidocSignatureSpan">react-overlays.</span>AutoAffix
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal">
+            function <span class="apidocSignatureSpan">react-overlays.</span>Modal
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Overlay">
+            function <span class="apidocSignatureSpan">react-overlays.</span>Overlay
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal">
+            function <span class="apidocSignatureSpan">react-overlays.</span>Portal
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Position">
+            function <span class="apidocSignatureSpan">react-overlays.</span>Position
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.RootCloseWrapper">
+            function <span class="apidocSignatureSpan">react-overlays.</span>RootCloseWrapper
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Transition">
+            function <span class="apidocSignatureSpan">react-overlays.</span>Transition
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.</span>Modal.defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.</span>Modal.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.</span>Modal.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.</span>Modal.prototype.__reactAutoBindPairs</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.</span>Portal.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.</span>Portal.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.</span>Portal.prototype.__reactAutoBindPairs</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.</span>manageAriaHidden</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-overlays.Modal">module react-overlays.Modal</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.Modal">
+            function <span class="apidocSignatureSpan">react-overlays.</span>Modal
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.Manager">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.</span>Manager
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.getDefaultProps">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.</span>getDefaultProps
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Modal.</span>defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Modal.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Modal.</span>displayName</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-overlays.Modal.defaultProps">module react-overlays.Modal.defaultProps</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-overlays.Modal.defaultProps.</span>autoFocus</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-overlays.Modal.defaultProps.</span>backdrop</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-overlays.Modal.defaultProps.</span>enforceFocus</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-overlays.Modal.defaultProps.</span>keyboard</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-overlays.Modal.defaultProps.</span>restoreFocus</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-overlays.Modal.defaultProps.</span>show</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.defaultProps.onHide">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.defaultProps.</span>onHide
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.defaultProps.renderBackdrop">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.defaultProps.</span>renderBackdrop
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Modal.defaultProps.</span>manager</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-overlays.Modal.propTypes">module react-overlays.Modal.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.autoFocus">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>autoFocus
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.backdrop">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>backdrop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.backdropClassName">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>backdropClassName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.backdropStyle">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>backdropStyle
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.backdropTransitionTimeout">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>backdropTransitionTimeout
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.container">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>container
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.containerClassName">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>containerClassName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.dialogTransitionTimeout">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>dialogTransitionTimeout
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.enforceFocus">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>enforceFocus
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.keyboard">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>keyboard
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.manager">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>manager
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.onBackdropClick">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onBackdropClick
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.onEnter">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onEnter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.onEntered">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onEntered
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.onEntering">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onEntering
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.onEscapeKeyUp">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onEscapeKeyUp
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.onExit">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onExit
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.onExited">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onExited
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.onExiting">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onExiting
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.onHide">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onHide
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.onShow">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onShow
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.renderBackdrop">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>renderBackdrop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.restoreFocus">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>restoreFocus
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.show">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>show
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.propTypes.transition">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>transition
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-overlays.Modal.prototype">module react-overlays.Modal.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.checkForFocus">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>checkForFocus
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.componentDidMount">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>componentDidMount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.componentDidUpdate">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>componentDidUpdate
+            <span class="apidocSignatureSpan">(prevProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.componentWillReceiveProps">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>componentWillReceiveProps
+            <span class="apidocSignatureSpan">(nextProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.componentWillUnmount">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>componentWillUnmount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.componentWillUpdate">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>componentWillUpdate
+            <span class="apidocSignatureSpan">(nextProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.constructor">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.enforceFocus">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>enforceFocus
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.focus">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>focus
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.getDialogElement">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>getDialogElement
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.getInitialState">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>getInitialState
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.handleBackdropClick">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>handleBackdropClick
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.handleDocumentKeyUp">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>handleDocumentKeyUp
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.handleHidden">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>handleHidden
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.isTopModal">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>isTopModal
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.omitProps">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>omitProps
+            <span class="apidocSignatureSpan">(props, propTypes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.onHide">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>onHide
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.onShow">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>onShow
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.render">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.renderBackdrop">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>renderBackdrop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.restoreLastFocus">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>restoreLastFocus
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.setMountNode">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>setMountNode
+            <span class="apidocSignatureSpan">(ref)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>__reactAutoBindPairs</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>componentWillMount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>getChildContext</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>getDefaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>mixins</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>shouldComponentUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>statics</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>updateComponent</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-overlays.Modal.prototype.__reactAutoBindPairs">module react-overlays.Modal.prototype.__reactAutoBindPairs</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.1">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>1
+            <span class="apidocSignatureSpan">(props, propTypes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.11">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>11
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.13">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>13
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.15">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>15
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.17">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>17
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.19">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>19
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.21">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>21
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.23">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>23
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.25">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>25
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.27">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>27
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.3">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>3
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.5">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>5
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.7">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>7
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.9">
+            function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>9
+            <span class="apidocSignatureSpan">(ref)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>0</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>10</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>12</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>14</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>16</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>18</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>2</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>20</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>22</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>24</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>26</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>4</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>6</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>8</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-overlays.Portal">module react-overlays.Portal</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.Portal">
+            function <span class="apidocSignatureSpan">react-overlays.</span>Portal
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Portal.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Portal.</span>displayName</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-overlays.Portal.propTypes">module react-overlays.Portal.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.propTypes.container">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.propTypes.</span>container
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-overlays.Portal.prototype">module react-overlays.Portal.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype._mountOverlayTarget">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>_mountOverlayTarget
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype._renderOverlay">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>_renderOverlay
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype._unmountOverlayTarget">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>_unmountOverlayTarget
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype._unrenderOverlay">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>_unrenderOverlay
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype.componentDidMount">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>componentDidMount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype.componentDidUpdate">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>componentDidUpdate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype.componentWillReceiveProps">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>componentWillReceiveProps
+            <span class="apidocSignatureSpan">(nextProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype.componentWillUnmount">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>componentWillUnmount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype.constructor">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype.getMountNode">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>getMountNode
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype.getOverlayDOMNode">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>getOverlayDOMNode
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype.render">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>__reactAutoBindPairs</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>componentWillMount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>componentWillUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>getChildContext</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>getDefaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>getInitialState</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>mixins</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>shouldComponentUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>statics</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>updateComponent</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-overlays.Portal.prototype.__reactAutoBindPairs">module react-overlays.Portal.prototype.__reactAutoBindPairs</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.1">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>1
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.11">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>11
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.3">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>3
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.5">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>5
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.7">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>7
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.9">
+            function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>9
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>0</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>10</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>2</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>4</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>6</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>8</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-overlays.Transition">module react-overlays.Transition</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.Transition.default">
+            function <span class="apidocSignatureSpan">react-overlays.Transition.</span>default
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">react-overlays.Transition.</span>ENTERED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">react-overlays.Transition.</span>ENTERING</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">react-overlays.Transition.</span>EXITED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">react-overlays.Transition.</span>EXITING</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">react-overlays.Transition.</span>UNMOUNTED</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-overlays.manageAriaHidden">module react-overlays.manageAriaHidden</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.manageAriaHidden.ariaHidden">
+            function <span class="apidocSignatureSpan">react-overlays.manageAriaHidden.</span>ariaHidden
+            <span class="apidocSignatureSpan">(show, node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.manageAriaHidden.hideSiblings">
+            function <span class="apidocSignatureSpan">react-overlays.manageAriaHidden.</span>hideSiblings
+            <span class="apidocSignatureSpan">(container, mountNode)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-overlays.manageAriaHidden.showSiblings">
+            function <span class="apidocSignatureSpan">react-overlays.manageAriaHidden.</span>showSiblings
+            <span class="apidocSignatureSpan">(container, mountNode)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-overlays" id="apidoc.module.react-overlays">module react-overlays</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Affix" id="apidoc.element.react-overlays.Affix">
+        function <span class="apidocSignatureSpan">react-overlays.</span>Affix
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Affix(props, context) {
+  _classCallCheck(this, Affix);
+
+  var _this = _possibleConstructorReturn(this, (Affix.__proto__ || Object.getPrototypeOf(Affix)).call(this, props, context));
+
+  _this.state = {
+    affixed: 'top',
+    position: null,
+    top: null
+  };
+
+  _this._needPositionUpdate = false;
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.AutoAffix" id="apidoc.element.react-overlays.AutoAffix">
+        function <span class="apidocSignatureSpan">react-overlays.</span>AutoAffix
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function AutoAffix(props, context) {
+  _classCallCheck(this, AutoAffix);
+
+  var _this = _possibleConstructorReturn(this, (AutoAffix.__proto__ || Object.getPrototypeOf(AutoAffix)).call(this, props, context
+));
+
+  _this.state = {
+    offsetTop: null,
+    offsetBottom: null,
+    width: null
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal" id="apidoc.element.react-overlays.Modal">
+        function <span class="apidocSignatureSpan">react-overlays.</span>Modal
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Modal = function (props, context, updater) {
+  // This constructor gets overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : void 0;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindPairs.length) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (initialState === undefined &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : _prodInvariant('82',
+Constructor.displayName || 'ReactCompositeComponent') : void 0;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Overlay" id="apidoc.element.react-overlays.Overlay">
+        function <span class="apidocSignatureSpan">react-overlays.</span>Overlay
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Overlay(props, context) {
+  _classCallCheck(this, Overlay);
+
+  var _this = _possibleConstructorReturn(this, (Overlay.__proto__ || Object.getPrototypeOf(Overlay)).call(this, props, context));
+
+  _this.state = { exited: !props.show };
+  _this.onHiddenListener = _this.handleHidden.bind(_this);
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal" id="apidoc.element.react-overlays.Portal">
+        function <span class="apidocSignatureSpan">react-overlays.</span>Portal
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Portal = function (props, context, updater) {
+  // This constructor gets overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : void 0;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindPairs.length) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (initialState === undefined &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : _prodInvariant('82',
+Constructor.displayName || 'ReactCompositeComponent') : void 0;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Position" id="apidoc.element.react-overlays.Position">
+        function <span class="apidocSignatureSpan">react-overlays.</span>Position
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Position(props, context) {
+  _classCallCheck(this, Position);
+
+  var _this = _possibleConstructorReturn(this, (Position.__proto__ || Object.getPrototypeOf(Position)).call(this, props, context
+));
+
+  _this.state = {
+    positionLeft: 0,
+    positionTop: 0,
+    arrowOffsetLeft: null,
+    arrowOffsetTop: null
+  };
+
+  _this._needsFlush = false;
+  _this._lastTarget = null;
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.RootCloseWrapper" id="apidoc.element.react-overlays.RootCloseWrapper">
+        function <span class="apidocSignatureSpan">react-overlays.</span>RootCloseWrapper
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function RootCloseWrapper(props, context) {
+  _classCallCheck(this, RootCloseWrapper);
+
+  var _this = _possibleConstructorReturn(this, (RootCloseWrapper.__proto__ || Object.getPrototypeOf(RootCloseWrapper)).call(this
+, props, context));
+
+  _this.handleMouseCapture = function (e) {
+    _this.preventMouseRootClose = isModifiedEvent(e) || !isLeftClickEvent(e) || (0, _contains2.default)(_reactDom2.default.findDOMNode
+(_this), e.target);
+  };
+
+  _this.handleMouse = function (e) {
+    if (!_this.preventMouseRootClose &amp;&amp; _this.props.onRootClose) {
+      _this.props.onRootClose(e);
+    }
+  };
+
+  _this.handleKeyUp = function (e) {
+    if (e.keyCode === escapeKeyCode &amp;&amp; _this.props.onRootClose) {
+      _this.props.onRootClose(e);
+    }
+  };
+
+  _this.preventMouseRootClose = false;
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Transition" id="apidoc.element.react-overlays.Transition">
+        function <span class="apidocSignatureSpan">react-overlays.</span>Transition
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Transition(props, context) {
+  _classCallCheck(this, Transition);
+
+  var _this = _possibleConstructorReturn(this, (Transition.__proto__ || Object.getPrototypeOf(Transition)).call(this, props, context
+));
+
+  var initialStatus = void 0;
+  _this.nextStatus = null;
+
+  if (props.in) {
+    if (props.transitionAppear) {
+      initialStatus = EXITED;
+      _this.nextStatus = ENTERING;
+    } else {
+      initialStatus = ENTERED;
+    }
+  } else {
+    if (props.unmountOnExit || props.mountOnEnter) {
+      initialStatus = UNMOUNTED;
+    } else {
+      initialStatus = EXITED;
+    }
+  }
+
+  _this.state = { status: initialStatus };
+
+  _this.nextCallback = null;
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-overlays.Modal" id="apidoc.module.react-overlays.Modal">module react-overlays.Modal</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.Modal" id="apidoc.element.react-overlays.Modal.Modal">
+        function <span class="apidocSignatureSpan">react-overlays.</span>Modal
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Modal = function (props, context, updater) {
+  // This constructor gets overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : void 0;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindPairs.length) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (initialState === undefined &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : _prodInvariant('82',
+Constructor.displayName || 'ReactCompositeComponent') : void 0;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.Manager" id="apidoc.element.react-overlays.Modal.Manager">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.</span>Manager
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ModalManager() {
+  var _ref2 = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : {},
+      _ref2$hideSiblingNode = _ref2.hideSiblingNodes,
+      hideSiblingNodes = _ref2$hideSiblingNode === undefined ? true : _ref2$hideSiblingNode,
+      _ref2$handleContainer = _ref2.handleContainerOverflow,
+      handleContainerOverflow = _ref2$handleContainer === undefined ? true : _ref2$handleContainer;
+
+  _classCallCheck(this, ModalManager);
+
+  this.hideSiblingNodes = hideSiblingNodes;
+  this.handleContainerOverflow = handleContainerOverflow;
+  this.modals = [];
+  this.containers = [];
+  this.data = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.getDefaultProps" id="apidoc.element.react-overlays.Modal.getDefaultProps">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.</span>getDefaultProps
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getDefaultProps() {
+  var noop = function noop() {};
+
+  return {
+    show: false,
+    backdrop: true,
+    keyboard: true,
+    autoFocus: true,
+    enforceFocus: true,
+    restoreFocus: true,
+    onHide: noop,
+    manager: modalManager,
+    renderBackdrop: function renderBackdrop(props) {
+      return _react2.default.createElement('div', props);
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-overlays.Modal.defaultProps" id="apidoc.module.react-overlays.Modal.defaultProps">module react-overlays.Modal.defaultProps</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.defaultProps.onHide" id="apidoc.element.react-overlays.Modal.defaultProps.onHide">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.defaultProps.</span>onHide
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.defaultProps.renderBackdrop" id="apidoc.element.react-overlays.Modal.defaultProps.renderBackdrop">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.defaultProps.</span>renderBackdrop
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderBackdrop(props) {
+  return _react2.default.createElement('div', props);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-overlays.Modal.propTypes" id="apidoc.module.react-overlays.Modal.propTypes">module react-overlays.Modal.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.autoFocus" id="apidoc.element.react-overlays.Modal.propTypes.autoFocus">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>autoFocus
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">autoFocus = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.backdrop" id="apidoc.element.react-overlays.Modal.propTypes.backdrop">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>backdrop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">backdrop = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.backdropClassName" id="apidoc.element.react-overlays.Modal.propTypes.backdropClassName">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>backdropClassName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">backdropClassName = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.backdropStyle" id="apidoc.element.react-overlays.Modal.propTypes.backdropStyle">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>backdropStyle
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">backdropStyle = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.backdropTransitionTimeout" id="apidoc.element.react-overlays.Modal.propTypes.backdropTransitionTimeout">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>backdropTransitionTimeout
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">backdropTransitionTimeout = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.container" id="apidoc.element.react-overlays.Modal.propTypes.container">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>container
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">container = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.containerClassName" id="apidoc.element.react-overlays.Modal.propTypes.containerClassName">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>containerClassName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">containerClassName = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.dialogTransitionTimeout" id="apidoc.element.react-overlays.Modal.propTypes.dialogTransitionTimeout">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>dialogTransitionTimeout
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dialogTransitionTimeout = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.enforceFocus" id="apidoc.element.react-overlays.Modal.propTypes.enforceFocus">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>enforceFocus
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">enforceFocus = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.keyboard" id="apidoc.element.react-overlays.Modal.propTypes.keyboard">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>keyboard
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">keyboard = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.manager" id="apidoc.element.react-overlays.Modal.propTypes.manager">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>manager
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">manager = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.onBackdropClick" id="apidoc.element.react-overlays.Modal.propTypes.onBackdropClick">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onBackdropClick
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onBackdropClick = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.onEnter" id="apidoc.element.react-overlays.Modal.propTypes.onEnter">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onEnter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onEnter = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+      if (this.nextStatus !== null) {
+        // nextStatus will always be ENTERING or EXITING.
+        this.cancelNextCallback();
+        var node = _reactDom2.default.findDOMNode(this);
+
+        if (this.nextStatus === ENTERING) {
+          this.props.<span class="apidocCodeKeywordSpan">onEnter</span>(node);
+
+          this.safeSetState({ status: ENTERING }, function () {
+_this2.props.onEntering(node);
+
+_this2.onTransitionEnd(node, function () {
+  _this2.safeSetState({ status: ENTERED }, function () {
+    _this2.props.onEntered(node);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.onEntered" id="apidoc.element.react-overlays.Modal.propTypes.onEntered">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onEntered
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onEntered = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+this.props.onEnter(node);
+
+this.safeSetState({ status: ENTERING }, function () {
+  _this2.props.onEntering(node);
+
+  _this2.onTransitionEnd(node, function () {
+    _this2.safeSetState({ status: ENTERED }, function () {
+      _this2.props.<span class="apidocCodeKeywordSpan">onEntered</span>(node);
+    });
+  });
+});
+        } else {
+this.props.onExit(node);
+
+this.safeSetState({ status: EXITING }, function () {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.onEntering" id="apidoc.element.react-overlays.Modal.propTypes.onEntering">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onEntering
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onEntering = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        this.cancelNextCallback();
+        var node = _reactDom2.default.findDOMNode(this);
+
+        if (this.nextStatus === ENTERING) {
+this.props.onEnter(node);
+
+this.safeSetState({ status: ENTERING }, function () {
+  _this2.props.<span class="apidocCodeKeywordSpan">onEntering</span>(node);
+
+  _this2.onTransitionEnd(node, function () {
+    _this2.safeSetState({ status: ENTERED }, function () {
+      _this2.props.onEntered(node);
+    });
+  });
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.onEscapeKeyUp" id="apidoc.element.react-overlays.Modal.propTypes.onEscapeKeyUp">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onEscapeKeyUp
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onEscapeKeyUp = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.onExit" id="apidoc.element.react-overlays.Modal.propTypes.onExit">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onExit
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onExit = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+_this2.onTransitionEnd(node, function () {
+  _this2.safeSetState({ status: ENTERED }, function () {
+    _this2.props.onEntered(node);
+  });
+});
+          });
+        } else {
+          this.props.<span class="apidocCodeKeywordSpan">onExit</span>(node);
+
+          this.safeSetState({ status: EXITING }, function () {
+_this2.props.onExiting(node);
+
+_this2.onTransitionEnd(node, function () {
+  _this2.safeSetState({ status: EXITED }, function () {
+    _this2.props.onExited(node);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.onExited" id="apidoc.element.react-overlays.Modal.propTypes.onExited">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onExited
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onExited = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    this.props.onExit(node);
+
+    this.safeSetState({ status: EXITING }, function () {
+      _this2.props.onExiting(node);
+
+      _this2.onTransitionEnd(node, function () {
+        _this2.safeSetState({ status: EXITED }, function () {
+          _this2.props.<span class="apidocCodeKeywordSpan">onExited</span>(node);
+        });
+      });
+    });
+  }
+
+  this.nextStatus = null;
+} else if (this.props.unmountOnExit &amp;&amp; this.state.status === EXITED) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.onExiting" id="apidoc.element.react-overlays.Modal.propTypes.onExiting">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onExiting
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onExiting = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    });
+  });
+});
+        } else {
+this.props.onExit(node);
+
+this.safeSetState({ status: EXITING }, function () {
+  _this2.props.<span class="apidocCodeKeywordSpan">onExiting</span>(node);
+
+  _this2.onTransitionEnd(node, function () {
+    _this2.safeSetState({ status: EXITED }, function () {
+      _this2.props.onExited(node);
+    });
+  });
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.onHide" id="apidoc.element.react-overlays.Modal.propTypes.onHide">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onHide
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onHide = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.onShow" id="apidoc.element.react-overlays.Modal.propTypes.onShow">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>onShow
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onShow = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.renderBackdrop" id="apidoc.element.react-overlays.Modal.propTypes.renderBackdrop">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>renderBackdrop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">renderBackdrop = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.restoreFocus" id="apidoc.element.react-overlays.Modal.propTypes.restoreFocus">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>restoreFocus
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">restoreFocus = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.show" id="apidoc.element.react-overlays.Modal.propTypes.show">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>show
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">show = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.propTypes.transition" id="apidoc.element.react-overlays.Modal.propTypes.transition">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.propTypes.</span>transition
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">transition = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-overlays.Modal.prototype" id="apidoc.module.react-overlays.Modal.prototype">module react-overlays.Modal.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.checkForFocus" id="apidoc.element.react-overlays.Modal.prototype.checkForFocus">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>checkForFocus
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function checkForFocus() {
+  if (_inDOM2.default) {
+    this.lastFocus = (0, _activeElement2.default)();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.componentDidMount" id="apidoc.element.react-overlays.Modal.prototype.componentDidMount">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>componentDidMount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentDidMount() {
+  if (this.props.show) {
+    this.onShow();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.componentDidUpdate" id="apidoc.element.react-overlays.Modal.prototype.componentDidUpdate">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>componentDidUpdate
+        <span class="apidocSignatureSpan">(prevProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentDidUpdate(prevProps) {
+  var transition = this.props.transition;
+
+
+  if (prevProps.show &amp;&amp; !this.props.show &amp;&amp; !transition) {
+    // Otherwise handleHidden will call this.
+    this.onHide();
+  } else if (!prevProps.show &amp;&amp; this.props.show) {
+    this.onShow();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.componentWillReceiveProps" id="apidoc.element.react-overlays.Modal.prototype.componentWillReceiveProps">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>componentWillReceiveProps
+        <span class="apidocSignatureSpan">(nextProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillReceiveProps(nextProps) {
+  if (nextProps.show) {
+    this.setState({ exited: false });
+  } else if (!nextProps.transition) {
+    // Otherwise let handleHidden take care of marking exited.
+    this.setState({ exited: true });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.componentWillUnmount" id="apidoc.element.react-overlays.Modal.prototype.componentWillUnmount">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>componentWillUnmount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillUnmount() {
+  var _props3 = this.props,
+      show = _props3.show,
+      transition = _props3.transition;
+
+
+  if (show || transition &amp;&amp; !this.state.exited) {
+    this.onHide();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.componentWillUpdate" id="apidoc.element.react-overlays.Modal.prototype.componentWillUpdate">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>componentWillUpdate
+        <span class="apidocSignatureSpan">(nextProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillUpdate(nextProps) {
+  if (!this.props.show &amp;&amp; nextProps.show) {
+    this.checkForFocus();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.constructor" id="apidoc.element.react-overlays.Modal.prototype.constructor">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (props, context, updater) {
+  // This constructor gets overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : void 0;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindPairs.length) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (initialState === undefined &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : _prodInvariant('82',
+Constructor.displayName || 'ReactCompositeComponent') : void 0;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.enforceFocus" id="apidoc.element.react-overlays.Modal.prototype.enforceFocus">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>enforceFocus
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function enforceFocus() {
+  var enforceFocus = this.props.enforceFocus;
+
+
+  if (!enforceFocus || !this.isMounted() || !this.isTopModal()) {
+    return;
+  }
+
+  var active = (0, _activeElement2.default)((0, _ownerDocument2.default)(this));
+  var modal = this.getDialogElement();
+
+  if (modal &amp;&amp; modal !== active &amp;&amp; !(0, _contains2.default)(modal, active)) {
+    modal.focus();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.focus" id="apidoc.element.react-overlays.Modal.prototype.focus">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>focus
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function focus() {
+  var autoFocus = this.props.autoFocus;
+  var modalContent = this.getDialogElement();
+  var current = (0, _activeElement2.default)((0, _ownerDocument2.default)(this));
+  var focusInModal = current &amp;&amp; (0, _contains2.default)(modalContent, current);
+
+  if (modalContent &amp;&amp; autoFocus &amp;&amp; !focusInModal) {
+    this.lastFocus = current;
+
+    if (!modalContent.hasAttribute('tabIndex')) {
+      modalContent.setAttribute('tabIndex', -1);
+      (0, _warning2.default)(false, 'The modal content node does not accept focus. ' + 'For the benefit of assistive technologies
+, the tabIndex of the node is being set to "-1".');
+    }
+
+    modalContent.focus();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.getDialogElement" id="apidoc.element.react-overlays.Modal.prototype.getDialogElement">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>getDialogElement
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getDialogElement() {
+  var node = this.refs.modal;
+  return node &amp;&amp; node.lastChild;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.getInitialState" id="apidoc.element.react-overlays.Modal.prototype.getInitialState">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>getInitialState
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getInitialState() {
+  return { exited: !this.props.show };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.handleBackdropClick" id="apidoc.element.react-overlays.Modal.prototype.handleBackdropClick">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>handleBackdropClick
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function handleBackdropClick(e) {
+  if (e.target !== e.currentTarget) {
+    return;
+  }
+
+  if (this.props.onBackdropClick) {
+    this.props.onBackdropClick(e);
+  }
+
+  if (this.props.backdrop === true) {
+    this.props.onHide();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.handleDocumentKeyUp" id="apidoc.element.react-overlays.Modal.prototype.handleDocumentKeyUp">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>handleDocumentKeyUp
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function handleDocumentKeyUp(e) {
+  if (this.props.keyboard &amp;&amp; e.keyCode === 27 &amp;&amp; this.isTopModal()) {
+    if (this.props.onEscapeKeyUp) {
+      this.props.onEscapeKeyUp(e);
+    }
+    this.props.onHide();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.handleHidden" id="apidoc.element.react-overlays.Modal.prototype.handleHidden">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>handleHidden
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function handleHidden() {
+  this.setState({ exited: true });
+  this.onHide();
+
+  if (this.props.onExited) {
+    var _props4;
+
+    (_props4 = this.props).onExited.apply(_props4, arguments);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.isTopModal" id="apidoc.element.react-overlays.Modal.prototype.isTopModal">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>isTopModal
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isTopModal() {
+  return this.props.manager.isTopModal(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.omitProps" id="apidoc.element.react-overlays.Modal.prototype.omitProps">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>omitProps
+        <span class="apidocSignatureSpan">(props, propTypes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function omitProps(props, propTypes) {
+
+  var keys = Object.keys(props);
+  var newProps = {};
+  keys.map(function (prop) {
+    if (!Object.prototype.hasOwnProperty.call(propTypes, prop)) {
+      newProps[prop] = props[prop];
+    }
+  });
+
+  return newProps;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.onHide" id="apidoc.element.react-overlays.Modal.prototype.onHide">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>onHide
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onHide() {
+  this.props.manager.remove(this);
+
+  this._onDocumentKeyupListener.remove();
+
+  this._onFocusinListener.remove();
+
+  if (this.props.restoreFocus) {
+    this.restoreLastFocus();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.onShow" id="apidoc.element.react-overlays.Modal.prototype.onShow">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>onShow
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onShow() {
+  var doc = (0, _ownerDocument2.default)(this);
+  var container = (0, _getContainer2.default)(this.props.container, doc.body);
+
+  this.props.manager.add(this, container, this.props.containerClassName);
+
+  this._onDocumentKeyupListener = (0, _addEventListener2.default)(doc, 'keyup', this.handleDocumentKeyUp);
+
+  this._onFocusinListener = (0, _addFocusListener2.default)(this.enforceFocus);
+
+  this.focus();
+
+  if (this.props.onShow) {
+    this.props.onShow();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.render" id="apidoc.element.react-overlays.Modal.prototype.render">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+  var _props = this.props,
+      show = _props.show,
+      container = _props.container,
+      children = _props.children,
+      Transition = _props.transition,
+      backdrop = _props.backdrop,
+      dialogTransitionTimeout = _props.dialogTransitionTimeout,
+      className = _props.className,
+      style = _props.style,
+      onExit = _props.onExit,
+      onExiting = _props.onExiting,
+      onEnter = _props.onEnter,
+      onEntering = _props.onEntering,
+      onEntered = _props.onEntered;
+
+
+  var dialog = _react2.default.Children.only(children);
+  var filteredProps = this.omitProps(this.props, Modal.propTypes);
+
+  var mountModal = show || Transition &amp;&amp; !this.state.exited;
+  if (!mountModal) {
+    return null;
+  }
+
+  var _dialog$props = dialog.props,
+      role = _dialog$props.role,
+      tabIndex = _dialog$props.tabIndex;
+
+
+  if (role === undefined || tabIndex === undefined) {
+    dialog = (0, _react.cloneElement)(dialog, {
+      role: role === undefined ? 'document' : role,
+      tabIndex: tabIndex == null ? '-1' : tabIndex
+    });
+  }
+
+  if (Transition) {
+    dialog = _react2.default.createElement(
+      Transition,
+      {
+        transitionAppear: true,
+        unmountOnExit: true,
+        'in': show,
+        timeout: dialogTransitionTimeout,
+        onExit: onExit,
+        onExiting: onExiting,
+        onExited: this.handleHidden,
+        onEnter: onEnter,
+        onEntering: onEntering,
+        onEntered: onEntered
+      },
+      dialog
+    );
+  }
+
+  return _react2.default.createElement(
+    _Portal2.default,
+    {
+      ref: this.setMountNode,
+      container: container
+    },
+    _react2.default.createElement(
+      'div',
+      _extends({
+        ref: 'modal',
+        role: role || 'dialog'
+      }, filteredProps, {
+        style: style,
+        className: className
+      }),
+      backdrop &amp;&amp; this.renderBackdrop(),
+      dialog
+    )
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.renderBackdrop" id="apidoc.element.react-overlays.Modal.prototype.renderBackdrop">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>renderBackdrop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderBackdrop() {
+  var _this = this;
+
+  var _props2 = this.props,
+      backdropStyle = _props2.backdropStyle,
+      backdropClassName = _props2.backdropClassName,
+      renderBackdrop = _props2.renderBackdrop,
+      Transition = _props2.transition,
+      backdropTransitionTimeout = _props2.backdropTransitionTimeout;
+
+
+  var backdropRef = function backdropRef(ref) {
+    return _this.backdrop = ref;
+  };
+
+  var backdrop = _react2.default.createElement('div', {
+    ref: backdropRef,
+    style: this.props.backdropStyle,
+    className: this.props.backdropClassName,
+    onClick: this.handleBackdropClick
+  });
+
+  if (Transition) {
+    backdrop = _react2.default.createElement(
+      Transition,
+      { transitionAppear: true,
+        'in': this.props.show,
+        timeout: backdropTransitionTimeout
+      },
+      renderBackdrop({
+        ref: backdropRef,
+        style: backdropStyle,
+        className: backdropClassName,
+        onClick: this.handleBackdropClick
+      })
+    );
+  }
+
+  return backdrop;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.restoreLastFocus" id="apidoc.element.react-overlays.Modal.prototype.restoreLastFocus">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>restoreLastFocus
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function restoreLastFocus() {
+  // Support: &lt;=IE11 doesn't support `focus()` on svg elements (RB: #917)
+  if (this.lastFocus &amp;&amp; this.lastFocus.focus) {
+    this.lastFocus.focus();
+    this.lastFocus = null;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.setMountNode" id="apidoc.element.react-overlays.Modal.prototype.setMountNode">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.</span>setMountNode
+        <span class="apidocSignatureSpan">(ref)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setMountNode(ref) {
+  this.mountNode = ref ? ref.getMountNode() : ref;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-overlays.Modal.prototype.__reactAutoBindPairs" id="apidoc.module.react-overlays.Modal.prototype.__reactAutoBindPairs">module react-overlays.Modal.prototype.__reactAutoBindPairs</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.1" id="apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.1">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>1
+        <span class="apidocSignatureSpan">(props, propTypes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function omitProps(props, propTypes) {
+
+  var keys = Object.keys(props);
+  var newProps = {};
+  keys.map(function (prop) {
+    if (!Object.prototype.hasOwnProperty.call(propTypes, prop)) {
+      newProps[prop] = props[prop];
+    }
+  });
+
+  return newProps;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.11" id="apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.11">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>11
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function handleHidden() {
+  this.setState({ exited: true });
+  this.onHide();
+
+  if (this.props.onExited) {
+    var _props4;
+
+    (_props4 = this.props).onExited.apply(_props4, arguments);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.13" id="apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.13">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>13
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function handleBackdropClick(e) {
+  if (e.target !== e.currentTarget) {
+    return;
+  }
+
+  if (this.props.onBackdropClick) {
+    this.props.onBackdropClick(e);
+  }
+
+  if (this.props.backdrop === true) {
+    this.props.onHide();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.15" id="apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.15">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>15
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function handleDocumentKeyUp(e) {
+  if (this.props.keyboard &amp;&amp; e.keyCode === 27 &amp;&amp; this.isTopModal()) {
+    if (this.props.onEscapeKeyUp) {
+      this.props.onEscapeKeyUp(e);
+    }
+    this.props.onHide();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.17" id="apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.17">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>17
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function checkForFocus() {
+  if (_inDOM2.default) {
+    this.lastFocus = (0, _activeElement2.default)();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.19" id="apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.19">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>19
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function focus() {
+  var autoFocus = this.props.autoFocus;
+  var modalContent = this.getDialogElement();
+  var current = (0, _activeElement2.default)((0, _ownerDocument2.default)(this));
+  var focusInModal = current &amp;&amp; (0, _contains2.default)(modalContent, current);
+
+  if (modalContent &amp;&amp; autoFocus &amp;&amp; !focusInModal) {
+    this.lastFocus = current;
+
+    if (!modalContent.hasAttribute('tabIndex')) {
+      modalContent.setAttribute('tabIndex', -1);
+      (0, _warning2.default)(false, 'The modal content node does not accept focus. ' + 'For the benefit of assistive technologies
+, the tabIndex of the node is being set to "-1".');
+    }
+
+    modalContent.focus();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.21" id="apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.21">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>21
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function restoreLastFocus() {
+  // Support: &lt;=IE11 doesn't support `focus()` on svg elements (RB: #917)
+  if (this.lastFocus &amp;&amp; this.lastFocus.focus) {
+    this.lastFocus.focus();
+    this.lastFocus = null;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.23" id="apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.23">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>23
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function enforceFocus() {
+  var enforceFocus = this.props.enforceFocus;
+
+
+  if (!enforceFocus || !this.isMounted() || !this.isTopModal()) {
+    return;
+  }
+
+  var active = (0, _activeElement2.default)((0, _ownerDocument2.default)(this));
+  var modal = this.getDialogElement();
+
+  if (modal &amp;&amp; modal !== active &amp;&amp; !(0, _contains2.default)(modal, active)) {
+    modal.focus();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.25" id="apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.25">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>25
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getDialogElement() {
+  var node = this.refs.modal;
+  return node &amp;&amp; node.lastChild;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.27" id="apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.27">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>27
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isTopModal() {
+  return this.props.manager.isTopModal(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.3" id="apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.3">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>3
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderBackdrop() {
+  var _this = this;
+
+  var _props2 = this.props,
+      backdropStyle = _props2.backdropStyle,
+      backdropClassName = _props2.backdropClassName,
+      renderBackdrop = _props2.renderBackdrop,
+      Transition = _props2.transition,
+      backdropTransitionTimeout = _props2.backdropTransitionTimeout;
+
+
+  var backdropRef = function backdropRef(ref) {
+    return _this.backdrop = ref;
+  };
+
+  var backdrop = _react2.default.createElement('div', {
+    ref: backdropRef,
+    style: this.props.backdropStyle,
+    className: this.props.backdropClassName,
+    onClick: this.handleBackdropClick
+  });
+
+  if (Transition) {
+    backdrop = _react2.default.createElement(
+      Transition,
+      { transitionAppear: true,
+        'in': this.props.show,
+        timeout: backdropTransitionTimeout
+      },
+      renderBackdrop({
+        ref: backdropRef,
+        style: backdropStyle,
+        className: backdropClassName,
+        onClick: this.handleBackdropClick
+      })
+    );
+  }
+
+  return backdrop;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.5" id="apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.5">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>5
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onShow() {
+  var doc = (0, _ownerDocument2.default)(this);
+  var container = (0, _getContainer2.default)(this.props.container, doc.body);
+
+  this.props.manager.add(this, container, this.props.containerClassName);
+
+  this._onDocumentKeyupListener = (0, _addEventListener2.default)(doc, 'keyup', this.handleDocumentKeyUp);
+
+  this._onFocusinListener = (0, _addFocusListener2.default)(this.enforceFocus);
+
+  this.focus();
+
+  if (this.props.onShow) {
+    this.props.onShow();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.7" id="apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.7">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>7
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onHide() {
+  this.props.manager.remove(this);
+
+  this._onDocumentKeyupListener.remove();
+
+  this._onFocusinListener.remove();
+
+  if (this.props.restoreFocus) {
+    this.restoreLastFocus();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.9" id="apidoc.element.react-overlays.Modal.prototype.__reactAutoBindPairs.9">
+        function <span class="apidocSignatureSpan">react-overlays.Modal.prototype.__reactAutoBindPairs.</span>9
+        <span class="apidocSignatureSpan">(ref)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setMountNode(ref) {
+  this.mountNode = ref ? ref.getMountNode() : ref;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-overlays.Portal" id="apidoc.module.react-overlays.Portal">module react-overlays.Portal</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.Portal" id="apidoc.element.react-overlays.Portal.Portal">
+        function <span class="apidocSignatureSpan">react-overlays.</span>Portal
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Portal = function (props, context, updater) {
+  // This constructor gets overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : void 0;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindPairs.length) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (initialState === undefined &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : _prodInvariant('82',
+Constructor.displayName || 'ReactCompositeComponent') : void 0;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-overlays.Portal.propTypes" id="apidoc.module.react-overlays.Portal.propTypes">module react-overlays.Portal.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.propTypes.container" id="apidoc.element.react-overlays.Portal.propTypes.container">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.propTypes.</span>container
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">container = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-overlays.Portal.prototype" id="apidoc.module.react-overlays.Portal.prototype">module react-overlays.Portal.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype._mountOverlayTarget" id="apidoc.element.react-overlays.Portal.prototype._mountOverlayTarget">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>_mountOverlayTarget
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _mountOverlayTarget() {
+  if (!this._overlayTarget) {
+    this._overlayTarget = document.createElement('div');
+    this._portalContainerNode = (0, _getContainer2.default)(this.props.container, (0, _ownerDocument2.default)(this).body);
+    this._portalContainerNode.appendChild(this._overlayTarget);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype._renderOverlay" id="apidoc.element.react-overlays.Portal.prototype._renderOverlay">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>_renderOverlay
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _renderOverlay() {
+
+  var overlay = !this.props.children ? null : _react2.default.Children.only(this.props.children);
+
+  // Save reference for future access.
+  if (overlay !== null) {
+    this._mountOverlayTarget();
+    this._overlayInstance = _reactDom2.default.unstable_renderSubtreeIntoContainer(this, overlay, this._overlayTarget);
+  } else {
+    // Unrender if the component is null for transitions to null
+    this._unrenderOverlay();
+    this._unmountOverlayTarget();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype._unmountOverlayTarget" id="apidoc.element.react-overlays.Portal.prototype._unmountOverlayTarget">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>_unmountOverlayTarget
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _unmountOverlayTarget() {
+  if (this._overlayTarget) {
+    this._portalContainerNode.removeChild(this._overlayTarget);
+    this._overlayTarget = null;
+  }
+  this._portalContainerNode = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype._unrenderOverlay" id="apidoc.element.react-overlays.Portal.prototype._unrenderOverlay">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>_unrenderOverlay
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _unrenderOverlay() {
+  if (this._overlayTarget) {
+    _reactDom2.default.unmountComponentAtNode(this._overlayTarget);
+    this._overlayInstance = null;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype.componentDidMount" id="apidoc.element.react-overlays.Portal.prototype.componentDidMount">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>componentDidMount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentDidMount() {
+  this._renderOverlay();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype.componentDidUpdate" id="apidoc.element.react-overlays.Portal.prototype.componentDidUpdate">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>componentDidUpdate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentDidUpdate() {
+  this._renderOverlay();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype.componentWillReceiveProps" id="apidoc.element.react-overlays.Portal.prototype.componentWillReceiveProps">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>componentWillReceiveProps
+        <span class="apidocSignatureSpan">(nextProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillReceiveProps(nextProps) {
+  if (this._overlayTarget &amp;&amp; nextProps.container !== this.props.container) {
+    this._portalContainerNode.removeChild(this._overlayTarget);
+    this._portalContainerNode = (0, _getContainer2.default)(nextProps.container, (0, _ownerDocument2.default)(this).body);
+    this._portalContainerNode.appendChild(this._overlayTarget);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype.componentWillUnmount" id="apidoc.element.react-overlays.Portal.prototype.componentWillUnmount">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>componentWillUnmount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillUnmount() {
+  this._unrenderOverlay();
+  this._unmountOverlayTarget();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype.constructor" id="apidoc.element.react-overlays.Portal.prototype.constructor">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (props, context, updater) {
+  // This constructor gets overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : void 0;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindPairs.length) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (initialState === undefined &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : _prodInvariant('82',
+Constructor.displayName || 'ReactCompositeComponent') : void 0;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype.getMountNode" id="apidoc.element.react-overlays.Portal.prototype.getMountNode">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>getMountNode
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getMountNode() {
+  return this._overlayTarget;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype.getOverlayDOMNode" id="apidoc.element.react-overlays.Portal.prototype.getOverlayDOMNode">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>getOverlayDOMNode
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getOverlayDOMNode() {
+  if (!this.isMounted()) {
+    throw new Error('getOverlayDOMNode(): A component must be mounted to have a DOM node.');
+  }
+
+  if (this._overlayInstance) {
+    return _reactDom2.default.findDOMNode(this._overlayInstance);
+  }
+
+  return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype.render" id="apidoc.element.react-overlays.Portal.prototype.render">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+  return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-overlays.Portal.prototype.__reactAutoBindPairs" id="apidoc.module.react-overlays.Portal.prototype.__reactAutoBindPairs">module react-overlays.Portal.prototype.__reactAutoBindPairs</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.1" id="apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.1">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>1
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _mountOverlayTarget() {
+  if (!this._overlayTarget) {
+    this._overlayTarget = document.createElement('div');
+    this._portalContainerNode = (0, _getContainer2.default)(this.props.container, (0, _ownerDocument2.default)(this).body);
+    this._portalContainerNode.appendChild(this._overlayTarget);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.11" id="apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.11">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>11
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getOverlayDOMNode() {
+  if (!this.isMounted()) {
+    throw new Error('getOverlayDOMNode(): A component must be mounted to have a DOM node.');
+  }
+
+  if (this._overlayInstance) {
+    return _reactDom2.default.findDOMNode(this._overlayInstance);
+  }
+
+  return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.3" id="apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.3">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>3
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _unmountOverlayTarget() {
+  if (this._overlayTarget) {
+    this._portalContainerNode.removeChild(this._overlayTarget);
+    this._overlayTarget = null;
+  }
+  this._portalContainerNode = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.5" id="apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.5">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>5
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _renderOverlay() {
+
+  var overlay = !this.props.children ? null : _react2.default.Children.only(this.props.children);
+
+  // Save reference for future access.
+  if (overlay !== null) {
+    this._mountOverlayTarget();
+    this._overlayInstance = _reactDom2.default.unstable_renderSubtreeIntoContainer(this, overlay, this._overlayTarget);
+  } else {
+    // Unrender if the component is null for transitions to null
+    this._unrenderOverlay();
+    this._unmountOverlayTarget();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.7" id="apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.7">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>7
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _unrenderOverlay() {
+  if (this._overlayTarget) {
+    _reactDom2.default.unmountComponentAtNode(this._overlayTarget);
+    this._overlayInstance = null;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.9" id="apidoc.element.react-overlays.Portal.prototype.__reactAutoBindPairs.9">
+        function <span class="apidocSignatureSpan">react-overlays.Portal.prototype.__reactAutoBindPairs.</span>9
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getMountNode() {
+  return this._overlayTarget;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-overlays.Transition" id="apidoc.module.react-overlays.Transition">module react-overlays.Transition</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.Transition.default" id="apidoc.element.react-overlays.Transition.default">
+        function <span class="apidocSignatureSpan">react-overlays.Transition.</span>default
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Transition(props, context) {
+  _classCallCheck(this, Transition);
+
+  var _this = _possibleConstructorReturn(this, (Transition.__proto__ || Object.getPrototypeOf(Transition)).call(this, props, context
+));
+
+  var initialStatus = void 0;
+  _this.nextStatus = null;
+
+  if (props.in) {
+    if (props.transitionAppear) {
+      initialStatus = EXITED;
+      _this.nextStatus = ENTERING;
+    } else {
+      initialStatus = ENTERED;
+    }
+  } else {
+    if (props.unmountOnExit || props.mountOnEnter) {
+      initialStatus = UNMOUNTED;
+    } else {
+      initialStatus = EXITED;
+    }
+  }
+
+  _this.state = { status: initialStatus };
+
+  _this.nextCallback = null;
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-overlays.manageAriaHidden" id="apidoc.module.react-overlays.manageAriaHidden">module react-overlays.manageAriaHidden</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.manageAriaHidden.ariaHidden" id="apidoc.element.react-overlays.manageAriaHidden.ariaHidden">
+        function <span class="apidocSignatureSpan">react-overlays.manageAriaHidden.</span>ariaHidden
+        <span class="apidocSignatureSpan">(show, node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ariaHidden(show, node) {
+  if (!node) {
+    return;
+  }
+  if (show) {
+    node.setAttribute('aria-hidden', 'true');
+  } else {
+    node.removeAttribute('aria-hidden');
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.manageAriaHidden.hideSiblings" id="apidoc.element.react-overlays.manageAriaHidden.hideSiblings">
+        function <span class="apidocSignatureSpan">react-overlays.manageAriaHidden.</span>hideSiblings
+        <span class="apidocSignatureSpan">(container, mountNode)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function hideSiblings(container, mountNode) {
+  siblings(container, mountNode, function (node) {
+    return ariaHidden(true, node);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-overlays.manageAriaHidden.showSiblings" id="apidoc.element.react-overlays.manageAriaHidden.showSiblings">
+        function <span class="apidocSignatureSpan">react-overlays.manageAriaHidden.</span>showSiblings
+        <span class="apidocSignatureSpan">(container, mountNode)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function showSiblings(container, mountNode) {
+  siblings(container, mountNode, function (node) {
+    return ariaHidden(false, node);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
